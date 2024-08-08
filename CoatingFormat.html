@@ -1,0 +1,263 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COATING FORMAT</title>
+  <style>
+    body {
+      font-family: monaco, times;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #808080;
+      padding: 5px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+    
+    .sidebar {
+      width: 150px;
+      height: 150%;
+      background-color: #e2e2e2;
+      float: left;
+      padding-left: 20px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .sidebar li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 50px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      clear: both;
+    }
+
+    .form-container {
+      margin: 0 auto;
+    }
+
+    .form-container label,
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .submit-button {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+
+    .submit-button:active {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AUTOLINE NANO CERAMIC COATING</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Testimonial.html">Testimonial</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar">
+    <h3>Types of maintenance :</h3>
+    <ul>
+      <li><a href="Coating.html">Coating</a></li>
+      <li><a href="GlassProtec.html">Glass Protection</a></li>
+      <li><a href="RustProtec.html">Rust Protection</a></li>
+      <li><a href="SoundProtec.html">Sound Protection</a></li>
+      <li><a href="PaintProtec.html">Paint Protection</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <h2>Coating Order Form</h2>
+    <div class="form-container">
+      <form id="coatingForm">
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="id">No. ID (KTP/SIM/Passport) :</label>
+          <input type="text" id="id" name="id" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address :</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone :</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="carType">Type of car (e.g., Honda HRV) :</label>
+          <input type="text" id="carType" name="carType" required>
+        </div>
+
+        <div class="form-group">
+          <label for="carSize">Size of car :</label>
+          <select id="carSize" name="carSize" required>
+            <option value="">- Choose Your Car Size! -</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extraLarge">Extra Large</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="layers">Layers :</label>
+          <select id="layers" name="layers" required>
+            <option value="">- Select A Layer! -</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="paymentMethod">Pay Method :</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">- Choose Your Payment! -</option>
+            <option value="bankTransfer">Transfer Bank</option>
+            <option value="ewallet">E-wallet</option>
+            <option value="creditCard">Credit Cards</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash</option>
+            <option value="qrCode">Qr Code</option>
+            <option value="mobileBanking">Mobile Banking</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <div class="footer">
+    &copy; 2024 Auliya Urrahim Faza | All Rights Reserved
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("coatingForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = {
+          name: form.name.value,
+          id: form.id.value,
+          address: form.address.value,
+          phone: form.phone.value,
+          carType: form.carType.value,
+          carSize: form.carSize.value,
+          layers: form.layers.value,
+          paymentMethod: form.paymentMethod.value
+        };
+
+        console.log("Form submitted:", formData);
+
+        alert("Form submitted successfully!");
+      });
+    });
+  </script>
+</body>
+</html>
